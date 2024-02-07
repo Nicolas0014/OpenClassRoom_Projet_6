@@ -1,0 +1,10 @@
+* {
+  font-family: Montserrat;
+  color: #000;
+}
+
+body {
+  @media (max-width: 767px) {
+      margin: 20px;
+  }
+}
