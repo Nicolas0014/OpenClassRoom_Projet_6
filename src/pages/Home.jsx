@@ -4,7 +4,7 @@ import Cards from "../components/Home/Cards";
 export default function Home({annonces}) {
 
   return (
-    <div id="home">
+    <div className="home">
       <Banner />
       <Cards annonces={annonces}/>
     </div>
