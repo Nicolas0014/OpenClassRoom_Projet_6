@@ -1,11 +1,14 @@
 import './Cards.scss';
+import { Link } from 'react-router-dom';
 
 export default function Card({annonce}) {
 
 
     return (
-        <div className='card' style={{ backgroundImage: `url(${annonce.cover})` , backgroundPosition: 'center'}}>
-            <h2 className='title'>{annonce.title}</h2>
-        </div>
+        <Link to={`/fiche_logement/${annonce.id}`}>
+            <div className='card' style={{ backgroundImage: `url(${annonce.cover})` , backgroundPosition: 'center'}}>
+                <h2 className='title'>{annonce.title}</h2>
+            </div>
+        </Link>
     )
 }
