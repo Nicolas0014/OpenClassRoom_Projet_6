@@ -1,4 +1,4 @@
-// import './Cards.scss';
+import './Cards.scss';
 import Card from './Card';
 import { useState, useEffect } from 'react';
 

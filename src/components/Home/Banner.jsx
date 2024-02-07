@@ -1,4 +1,4 @@
-// import './Banner.scss';
+import './Banner.scss';
 import BackgroundBanner from '../../images/BackgroundBanner.png'
 
 export default function Banner() {

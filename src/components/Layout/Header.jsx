@@ -1,4 +1,4 @@
-// import './Header.scss';
+import './Header.scss';
 import LogoLarge from '../../images/Logo_Large.png'
 import LogoSmall from '../../images/Logo_Small.png'
 import { useState, useEffect } from 'react';

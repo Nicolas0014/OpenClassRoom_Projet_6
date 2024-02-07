@@ -8,6 +8,8 @@ import FicheLogement from './pages/FicheLogement';
 import APropos from './pages/APropos';
 import Error404 from "./pages/Error404";
 
+import './index.scss'
+
 const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

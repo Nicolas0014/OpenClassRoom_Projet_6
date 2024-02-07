@@ -1,4 +1,4 @@
-// import './Cards.scss';
+import './Cards.scss';
 
 export default function Card({annonce}) {
 
