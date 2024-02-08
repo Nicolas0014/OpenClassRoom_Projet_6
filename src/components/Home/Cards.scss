@@ -6,6 +6,10 @@
     max-width: 1240px;
     margin: auto;
 
+    @media (max-width: 1240px) {
+        margin: auto 20px;
+    }
+
     @media (max-width: 767px) {
         background: none;
     }

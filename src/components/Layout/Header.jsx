@@ -9,6 +9,17 @@ export default function Header() {
     const [windowSize, setWindowSize] = useState(window.innerWidth);
     const [currentLogo, setCurrentLogo] = useState(LogoSmall);
 
+    useEffect(() => {
+        function handleResize() {
+            setWindowSize(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []); 
     useEffect (() => {
         setCurrentLogo(windowSize > 768 ? LogoLarge : LogoSmall)
     }, [windowSize]);
