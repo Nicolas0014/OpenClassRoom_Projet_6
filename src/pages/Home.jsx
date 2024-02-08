@@ -1,4 +1,4 @@
-import Banner from "../components/Home/Banner";
+import Banner from "../components/reusables/Banner";
 import Cards from "../components/Home/Cards";
 
 export default function Home({annonces}) {
