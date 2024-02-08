@@ -12,8 +12,12 @@
         font-size: 24px;
         font-weight: 700;
         color: #fff;
-        padding: 5px 10px;
+        padding: 10px 15px;
         transition: all 0.5s ease-out;
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
 
         &.open {
             border-radius: 5px;
@@ -22,6 +26,10 @@
         .arrow {
             transition: all 0.2s ease-out;
             cursor: pointer;
+
+            @media (max-width: 767px) {
+                scale: 0.8;
+            }
 
             &.down {
                 transform: rotate(-180deg);
@@ -39,6 +47,9 @@
         transition: all 0.5s ease-out;
         padding: 10px 15px;
 
+        @media (max-width: 767px) {
+            font-size: 12px;
+        }
 
         &.hidden {
             height: 0;
@@ -50,4 +61,16 @@
             margin: 0;
         }
     }
+}
+
+@keyframes CollapseInfosEntrance {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
