@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Slideshow from "../components/FicheLogement/Slideshow";
 
 export default function FicheLogement({annonces}) {
 
@@ -19,7 +20,7 @@ export default function FicheLogement({annonces}) {
 
     return currentAnnonce && (
       <div id="fiche_logement">
-        {currentAnnonce.title}
+        <Slideshow pictures={currentAnnonce.pictures}/>
       </div>
     );
   }

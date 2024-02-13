@@ -2,10 +2,14 @@
 
 header {
     max-width: 1240px;
-    margin: auto;
+    margin: 20px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 1240px) {
+        margin: 20px;
+    }
 
     .links-container {
         display: flex;
