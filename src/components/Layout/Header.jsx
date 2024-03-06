@@ -26,7 +26,7 @@ export default function Header() {
 
     return (
         <header>
-            <img src={currentLogo} alt="Logo"/>
+            <Link to="/"><img src={currentLogo} alt="Logo"/></Link>
             <nav className='links-container'>
                 <Link to="/" className={`link`}>Accueil</Link>
                 <Link to="/a_propos" className='link'>A Propos</Link>

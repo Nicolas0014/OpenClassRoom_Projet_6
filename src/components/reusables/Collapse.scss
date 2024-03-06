@@ -38,14 +38,15 @@
     }
 
     .informations {
-        height: auto;
+        max-height: 0;
+        overflow: hidden;
         background: #F6F6F6;
         color: #000;
         display: block;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         transition: all 0.5s ease-out;
-        padding: 10px 15px;
+        padding: 0 15px;
 
         @media (max-width: 767px) {
             font-size: 12px;
@@ -53,8 +54,12 @@
 
         &.hidden {
             height: 0;
-            opacity: 0;
-            transition: all 0.5s ease-out;
+            transition: all 0.1s ease-out;
+            animation: CollapseInfosExit 0.5s ease 0s 1 normal forwards;
+        }
+
+        &.visible {
+            animation: CollapseInfosEntrance 0.5s ease 0s 1 normal forwards;
         }
 
         ul, p {
@@ -65,12 +70,23 @@
 
 @keyframes CollapseInfosEntrance {
 	0% {
-		opacity: 0;
-		transform: translateY(-50px);
+        max-height: 0;
 	}
 
 	100% {
-		opacity: 1;
-		transform: translateY(0);
+        max-height: 9999px;
+        padding: 10px 15px;
 	}
+}
+
+@keyframes CollapseInfosExit {
+	0% {
+        max-height: 9999px;
+        padding: 10px 15px;
+	}
+
+	100% {
+        max-height: 0;
+	}
+
 }
