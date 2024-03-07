@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Slideshow from "../components/FicheLogement/Slideshow";
+import LogementInfos from "../components/FicheLogement/LogementInfos";
 
 export default function FicheLogement() {
 
@@ -30,6 +31,7 @@ export default function FicheLogement() {
     return currentAnnonce && (
       <div id="fiche_logement">
         <Slideshow pictures={currentAnnonce.pictures}/>
+        <LogementInfos currentAnnonce={currentAnnonce}/>
       </div>
     );
   }

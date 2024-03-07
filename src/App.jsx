@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import FicheLogement from './pages/FicheLogement';
 import APropos from './pages/APropos';
 import Error404 from "./pages/Error404";
+import './App.scss';
 
 export default function App() {
 

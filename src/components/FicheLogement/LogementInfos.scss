@@ -1,0 +1,83 @@
+@import '../../index.scss';
+
+.logement-infos {
+    max-width: 1240px;
+    margin: 3rem auto;
+    font-family: $main-family;
+
+    .upper-infos {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .title {
+                font-size: 36px;
+                font-weight: 500;
+                color: $main-color;
+                margin-block: 0;
+            }
+
+            .location {
+                font-size: 18px;
+                font-weight: 500;
+                margin-block: 0 0.5rem;
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .host-infos {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                .name {
+                    color: $main-color;
+                    font-size: 18px;
+                    font-weight: 500;
+                    max-width: 95px;
+                    text-align: right;
+                }
+
+                .picture {
+                    border-radius: 100%;
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+        }
+
+        .tags-list {
+            display: flex;
+            gap: 1rem;
+   
+            .tag {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $main-color;
+                padding: 5px 20px;
+                border-radius: 12px;
+                font-size: 14px;
+                font-weight: 700;
+                color: #fff;
+            }
+        }
+    }
+    .collapses-container {
+        display: flex;
+        gap: 4rem;
+
+        .collapse {
+            flex: 1;
+        }
+    }
+}
