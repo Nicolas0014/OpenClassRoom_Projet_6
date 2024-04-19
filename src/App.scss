@@ -10,5 +10,13 @@ body {
             min-height: 100vh;
             justify-content: space-between;
         }
+
+        .page {
+            margin-top: 2rem;
+
+            @media (max-width: 500px) {
+                margin-top: 0;
+            }
+        }
     }
 }

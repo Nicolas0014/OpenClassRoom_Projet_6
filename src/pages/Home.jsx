@@ -27,7 +27,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="home">
+    <div className="page home">
       <Banner BackgroundBanner={BackgroundBanner} title={title}/>
       <Cards annonces={annonces}/>
     </div>

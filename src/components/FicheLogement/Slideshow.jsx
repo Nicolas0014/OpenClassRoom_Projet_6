@@ -38,9 +38,9 @@ export default function Slideshow({pictures}) {
                 <>
                     <img className="arrow left" onClick={() => picturesNavigation('left')} src={arrowLeft} alt="Flèche gauche"/>
                     <img className="arrow right" onClick={() => picturesNavigation('right')} src={arrowRight} alt="Flèche droite"/>
-                    <p className='numerotation'>{(currentPicturePosition+1) + '/' + (pictures.length)}</p>
                 </>
             }
+            <p className='numerotation'>{(currentPicturePosition+1) + '/' + (pictures.length)}</p>
         </div>
         
     );

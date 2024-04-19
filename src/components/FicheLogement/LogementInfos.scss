@@ -5,7 +5,7 @@
     margin: 3rem auto;
     font-family: $main-family;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1240px) {
         margin: 1rem 20px;
     }
 
@@ -122,7 +122,7 @@
         display: flex;
         gap: 4rem;
         
-        @media (max-width: 767px) {
+        @media (max-width: 500px) {
             flex-direction: column;
             gap: 1.5rem;
         }

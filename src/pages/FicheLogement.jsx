@@ -29,7 +29,7 @@ export default function FicheLogement() {
 
 
     return currentAnnonce && (
-      <div id="fiche_logement">
+      <div id="fiche_logement" className="page">
         <Slideshow pictures={currentAnnonce.pictures}/>
         <LogementInfos currentAnnonce={currentAnnonce}/>
       </div>
